@@ -1,0 +1,22 @@
+﻿apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: base-deployment 
+  namespace: base 
+  labels: 
+    app: base
+spec:
+  replicas: 2
+  selector:
+    matchLabels: 
+      app: base
+  template:
+    metadata:
+      labels:
+        app: base
+    spec:
+      containers: 
+        - name: nginx
+          image: registrocontainertutorial.azurecr.io/teste:10
+          ports:
+            - containerPort: 80
