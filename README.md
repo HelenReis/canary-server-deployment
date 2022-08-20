@@ -1,4 +1,4 @@
-# Simple deploy simulation using Kubernetes to run locally
+# Deploy simulation using Kubernetes to run locally
 
 ![Badge em Desenvolvimento](http://img.shields.io/static/v1?label=STATUS&message=IN%20DEVELOPMENT&color=GREEN&style=for-the-badge)
 
