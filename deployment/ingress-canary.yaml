@@ -1,0 +1,23 @@
+﻿apiVersion: networking.k8s.io/v1
+kind: Ingress
+metadata:
+  name: ingress-canary
+  namespace: base
+  labels:
+    app: base-canary
+  annotations: 
+    nginx.ingress.kubernetes.io/canary: "true"
+    nginx.ingress.kubernetes.io/canary-weight: "30"
+spec:
+  ingressClassName: nginx
+  rules:
+  - host: kubernetes.docker.internal
+    http:
+      paths:
+        - path: /
+          pathType: Prefix
+          backend:
+            service:
+              name: base-service-canary
+              port: 
+                number: 80
