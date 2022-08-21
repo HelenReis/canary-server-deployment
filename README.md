@@ -28,3 +28,6 @@ Demonstration to how to deploy an application with canary server in Kubernetes r
 
 ## :eyes: What's next
 - It'll be built a pipeline file to automate the process
+
+## :triangular_ruler: UML deploy diagram
+<img src="uml/uml_diagram.png" alt="Alt text" title="UML deploy diagram">
