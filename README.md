@@ -12,7 +12,7 @@ Demonstration to how to deploy an application with canary server in Kubernetes r
 
 - To build the Docker images navigate locally within the directory where the file *Dockerfile* is located and run `docker image build defaultserverimage:1.0 .`
 - Notice that the previous step created the image of the default server. Before running to create the canary server image, let's change the response of the project so you can notice the difference when requesting the default server and the canary server. Navigate to the *WeatherForecastController.cs* within the project and replace the string *"Default Server"* to *"Canary Server"*
-- Within the *Dockerfile* directory again, run `docker image build defaultcanaryimage:1.0 .`
+- Within the *Dockerfile* directory again, run `docker image build canaryserverimage:1.0 .`
 
 ## :raising_hand: Final step: How to run it locally on Kubernetes (windows approach)
 
