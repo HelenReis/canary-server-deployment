@@ -12,7 +12,7 @@ namespace KubernetesCanaryDeployment.Controllers
         [HttpGet]
         public string Get()
         {
-            return "Canary Server";
+            return "Default Server";
         }
     }
 }

@@ -17,6 +17,6 @@ spec:
     spec:
       containers: 
         - name: nginx
-          image: registrocontainertutorial.azurecr.io/teste:10
+          image: defaultserverimage:1.0
           ports:
             - containerPort: 80
